@@ -7,7 +7,7 @@ var make = function make(localRuntime) {
     }
 
     return {
-        'doNothingAtAll': function() {}
+        'getWelcomeMessage': function() { return "Yay! I didn't crash!" }
     };
 };
 

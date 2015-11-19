@@ -1,6 +1,6 @@
-module ParentModule (doNothing) where
+module ParentModule where
 
 import Native.ParentModule
 
-doNothing () =
-    Native.ParentModule.doNothing
+getParentMessage () =
+    Native.ParentModule.getParentMessage
