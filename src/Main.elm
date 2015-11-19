@@ -1,9 +1,10 @@
 module Main where
 
-import ParentModule.Submodule
+import ParentModule.Submodule.GrandchildModule exposing (getWelcomeMessage)
 
-import Graphics.Element
+import Graphics.Element exposing (show, Element)
 
-main : Graphics.Element.Element
+
+main : Element
 main =
-    Graphics.Element.show (ParentModule.Submodule.getWelcomeMessage ())
+    show (getWelcomeMessage ())
